@@ -1,0 +1,501 @@
+company_id,company_name,industry,country,employee_count,hr_technology,technology_category,deployment_type,annual_hr_tech_spend_usd
+SPAN-0001,Professional Services Company 001,Professional Services,United States,250,Deel,Global Employment,Hybrid,8650.57
+SPAN-0002,Financial Services Company 002,Financial Services,Canada,900,Rippling,Payroll,SaaS,60567.53
+SPAN-0003,Financial Services Company 003,Financial Services,Germany,25000,Deel,Global Employment,SaaS,597049.55
+SPAN-0004,Financial Services Company 004,Financial Services,India,3500,Gusto,Payroll,SaaS,96143.61
+SPAN-0005,Professional Services Company 005,Professional Services,United States,5000,BambooHR,HRIS,SaaS,227769.04
+SPAN-0006,Manufacturing Company 006,Manufacturing,United States,10000,Personio,HRIS,SaaS,490997.8
+SPAN-0007,Software Company 007,Software,United States,10000,Workday,HCM,SaaS,229667.26
+SPAN-0008,Software Company 008,Software,Ireland,2500,iCIMS,ATS,Cloud,61341.16
+SPAN-0009,Software Company 009,Software,United States,120,Personio,HRIS,SaaS,7212.51
+SPAN-0010,Logistics Company 010,Logistics,Germany,10000,Greenhouse,ATS,SaaS,700676.21
+SPAN-0011,Logistics Company 011,Logistics,United States,1800,iCIMS,ATS,SaaS,96926.63
+SPAN-0012,Logistics Company 012,Logistics,Ireland,7500,iCIMS,ATS,Cloud,294004.6
+SPAN-0013,Telecommunications Company 013,Telecommunications,United States,120,Lever,ATS,Cloud,7513.02
+SPAN-0014,Retail Company 014,Retail,United Kingdom,2500,Gusto,Payroll,Cloud,112589.67
+SPAN-0015,Financial Services Company 015,Financial Services,Netherlands,3500,Greenhouse,ATS,SaaS,147995.51
+SPAN-0016,Professional Services Company 016,Professional Services,United States,3500,Oracle HCM,HCM,SaaS,81469.38
+SPAN-0017,Manufacturing Company 017,Manufacturing,India,15000,BambooHR,HRIS,Hybrid,588354.6
+SPAN-0018,Healthcare Company 018,Healthcare,United States,250,Workday,HCM,SaaS,5378.59
+SPAN-0019,Logistics Company 019,Logistics,Australia,1200,Oracle HCM,HCM,Cloud,79897.09
+SPAN-0020,Logistics Company 020,Logistics,Ireland,3500,Personio,HRIS,SaaS,213279.97
+SPAN-0021,Telecommunications Company 021,Telecommunications,United States,120,Greenhouse,ATS,SaaS,2373.76
+SPAN-0022,Retail Company 022,Retail,France,25000,HiBob,HRIS,Cloud,539840.63
+SPAN-0023,Media Company 023,Media,United States,1800,Gusto,Payroll,SaaS,95791.8
+SPAN-0024,Software Company 024,Software,India,120,Rippling,Payroll,Cloud,4584.38
+SPAN-0025,Healthcare Company 025,Healthcare,India,7500,Lever,ATS,Hybrid,428403.72
+SPAN-0026,Manufacturing Company 026,Manufacturing,Germany,25000,Oracle HCM,HCM,Cloud,1447541.24
+SPAN-0027,Telecommunications Company 027,Telecommunications,United States,900,Paychex,Payroll,SaaS,18154.98
+SPAN-0028,Retail Company 028,Retail,Canada,650,Workday,HCM,Hybrid,37452.36
+SPAN-0029,Manufacturing Company 029,Manufacturing,France,1200,Greenhouse,ATS,Cloud,67084.15
+SPAN-0030,Manufacturing Company 030,Manufacturing,United Kingdom,5000,Deel,Global Employment,Hybrid,284276.74
+SPAN-0031,Healthcare Company 031,Healthcare,Australia,10000,SAP SuccessFactors,HCM,Hybrid,376363.63
+SPAN-0032,Logistics Company 032,Logistics,France,5000,Oracle HCM,HCM,SaaS,329143.75
+SPAN-0033,Healthcare Company 033,Healthcare,Germany,120,iCIMS,ATS,Cloud,5512.84
+SPAN-0034,Retail Company 034,Retail,United States,2500,iCIMS,ATS,Cloud,68455.47
+SPAN-0035,Software Company 035,Software,France,7500,ADP Workforce Now,Payroll,SaaS,263415.21
+SPAN-0036,Retail Company 036,Retail,United Kingdom,1200,UKG Pro,Workforce Management,Hybrid,32296.42
+SPAN-0037,Media Company 037,Media,United Kingdom,3500,HiBob,HRIS,SaaS,104263.01
+SPAN-0038,Media Company 038,Media,United States,15000,Deel,Global Employment,Cloud,425469.3
+SPAN-0039,Logistics Company 039,Logistics,Ireland,650,Deel,Global Employment,Hybrid,22871.05
+SPAN-0040,Financial Services Company 040,Financial Services,Australia,15000,SAP SuccessFactors,HCM,Cloud,967635.8
+SPAN-0041,Manufacturing Company 041,Manufacturing,Canada,15000,Gusto,Payroll,SaaS,1007301.06
+SPAN-0042,Education Company 042,Education,United Kingdom,650,ADP Workforce Now,Payroll,SaaS,21748.25
+SPAN-0043,Media Company 043,Media,United States,650,Workday,HCM,SaaS,21083.87
+SPAN-0044,Education Company 044,Education,United States,650,Deel,Global Employment,Hybrid,26156.29
+SPAN-0045,Logistics Company 045,Logistics,Singapore,1800,iCIMS,ATS,Hybrid,125326.45
+SPAN-0046,Media Company 046,Media,France,7500,iCIMS,ATS,SaaS,521869.31
+SPAN-0047,Telecommunications Company 047,Telecommunications,United States,2500,iCIMS,ATS,Cloud,119831.28
+SPAN-0048,Media Company 048,Media,Australia,10000,iCIMS,ATS,Cloud,516944.86
+SPAN-0049,Media Company 049,Media,United States,3500,ADP Workforce Now,Payroll,Hybrid,197560.8
+SPAN-0050,Healthcare Company 050,Healthcare,United States,1800,Deel,Global Employment,Hybrid,77238.35
+SPAN-0051,Healthcare Company 051,Healthcare,Germany,120,Greenhouse,ATS,Cloud,5421.21
+SPAN-0052,Logistics Company 052,Logistics,United Kingdom,1800,SAP SuccessFactors,HCM,SaaS,105805.54
+SPAN-0053,Retail Company 053,Retail,Australia,5000,Gusto,Payroll,Hybrid,324011.7
+SPAN-0054,Financial Services Company 054,Financial Services,Germany,250,Paychex,Payroll,Cloud,9364.7
+SPAN-0055,Telecommunications Company 055,Telecommunications,France,25000,Lever,ATS,Hybrid,1210964.23
+SPAN-0056,Healthcare Company 056,Healthcare,Ireland,1800,Rippling,Payroll,Hybrid,72634.71
+SPAN-0057,Financial Services Company 057,Financial Services,Australia,1800,Greenhouse,ATS,SaaS,74111.32
+SPAN-0058,Telecommunications Company 058,Telecommunications,United Kingdom,5000,SAP SuccessFactors,HCM,Cloud,307923.49
+SPAN-0059,Professional Services Company 059,Professional Services,United States,120,Greenhouse,ATS,Cloud,5007.87
+SPAN-0060,Financial Services Company 060,Financial Services,United States,250,Personio,HRIS,Cloud,17443.03
+SPAN-0061,Logistics Company 061,Logistics,United Kingdom,1200,BambooHR,HRIS,Hybrid,69457.44
+SPAN-0062,Telecommunications Company 062,Telecommunications,United States,120,Workday,HCM,Cloud,5152.71
+SPAN-0063,Healthcare Company 063,Healthcare,Germany,10000,HiBob,HRIS,Cloud,402258.04
+SPAN-0064,Education Company 064,Education,Netherlands,25000,Workday,HCM,Hybrid,1701073.32
+SPAN-0065,Education Company 065,Education,Germany,1800,Deel,Global Employment,SaaS,119326.68
+SPAN-0066,Education Company 066,Education,United States,7500,Personio,HRIS,Cloud,447343.09
+SPAN-0067,Telecommunications Company 067,Telecommunications,India,250,Paychex,Payroll,Cloud,4791.36
+SPAN-0068,Education Company 068,Education,France,120,Paychex,Payroll,Hybrid,5797.97
+SPAN-0069,Education Company 069,Education,Netherlands,1800,Workday,HCM,Hybrid,78800.39
+SPAN-0070,Healthcare Company 070,Healthcare,United States,3500,Paychex,Payroll,SaaS,99604.91
+SPAN-0071,Financial Services Company 071,Financial Services,United States,650,Oracle HCM,HCM,Hybrid,44496.78
+SPAN-0072,Media Company 072,Media,United States,650,Paychex,Payroll,SaaS,33868.97
+SPAN-0073,Education Company 073,Education,Australia,5000,Workday,HCM,Hybrid,215660.07
+SPAN-0074,Retail Company 074,Retail,United States,25000,UKG Pro,Workforce Management,Cloud,1599802.6
+SPAN-0075,Logistics Company 075,Logistics,United States,3500,Greenhouse,ATS,Hybrid,114722.41
+SPAN-0076,Software Company 076,Software,Singapore,7500,HiBob,HRIS,Hybrid,387728.41
+SPAN-0077,Media Company 077,Media,Singapore,650,Deel,Global Employment,Hybrid,45573.54
+SPAN-0078,Professional Services Company 078,Professional Services,United States,650,Workday,HCM,Cloud,18140.27
+SPAN-0079,Education Company 079,Education,United States,1200,SAP SuccessFactors,HCM,SaaS,57722.99
+SPAN-0080,Logistics Company 080,Logistics,United States,1200,SAP SuccessFactors,HCM,Hybrid,61708.68
+SPAN-0081,Education Company 081,Education,United Kingdom,25000,Greenhouse,ATS,Hybrid,524628.75
+SPAN-0082,Financial Services Company 082,Financial Services,Singapore,5000,ADP Workforce Now,Payroll,Hybrid,170443.54
+SPAN-0083,Software Company 083,Software,United States,15000,Paychex,Payroll,Cloud,815615.34
+SPAN-0084,Telecommunications Company 084,Telecommunications,Germany,120,Deel,Global Employment,SaaS,2937.96
+SPAN-0085,Logistics Company 085,Logistics,Singapore,120,Workday,HCM,Cloud,6325.14
+SPAN-0086,Logistics Company 086,Logistics,United States,15000,BambooHR,HRIS,SaaS,289561.63
+SPAN-0087,Retail Company 087,Retail,Singapore,5000,SAP SuccessFactors,HCM,SaaS,231875.38
+SPAN-0088,Software Company 088,Software,Germany,1800,iCIMS,ATS,Cloud,120619.79
+SPAN-0089,Logistics Company 089,Logistics,United States,2500,Oracle HCM,HCM,Cloud,51604.12
+SPAN-0090,Professional Services Company 090,Professional Services,Netherlands,650,iCIMS,ATS,Cloud,45737.8
+SPAN-0091,Financial Services Company 091,Financial Services,United Kingdom,900,ADP Workforce Now,Payroll,Hybrid,42144.76
+SPAN-0092,Healthcare Company 092,Healthcare,Germany,1200,ADP Workforce Now,Payroll,Cloud,46210.39
+SPAN-0093,Retail Company 093,Retail,United Kingdom,25000,UKG Pro,Workforce Management,Hybrid,955273.97
+SPAN-0094,Professional Services Company 094,Professional Services,United States,25000,Deel,Global Employment,Hybrid,1601113.65
+SPAN-0095,Logistics Company 095,Logistics,United States,1200,BambooHR,HRIS,SaaS,89278.43
+SPAN-0096,Financial Services Company 096,Financial Services,Germany,1200,Greenhouse,ATS,Hybrid,61900.98
+SPAN-0097,Education Company 097,Education,India,650,SAP SuccessFactors,HCM,Hybrid,46735.11
+SPAN-0098,Retail Company 098,Retail,United States,15000,SAP SuccessFactors,HCM,Cloud,1012835.38
+SPAN-0099,Software Company 099,Software,Ireland,5000,BambooHR,HRIS,SaaS,152726.5
+SPAN-0100,Professional Services Company 100,Professional Services,United Kingdom,2500,Lever,ATS,Hybrid,172957.86
+SPAN-0101,Healthcare Company 101,Healthcare,United Kingdom,3500,Paychex,Payroll,SaaS,129519.29
+SPAN-0102,Professional Services Company 102,Professional Services,United States,25000,Paychex,Payroll,Cloud,1764011.29
+SPAN-0103,Education Company 103,Education,Germany,420,Workday,HCM,Cloud,8611.57
+SPAN-0104,Healthcare Company 104,Healthcare,Ireland,3500,Gusto,Payroll,Cloud,175403.18
+SPAN-0105,Financial Services Company 105,Financial Services,Singapore,5000,Lever,ATS,SaaS,212473.54
+SPAN-0106,Logistics Company 106,Logistics,United States,250,HiBob,HRIS,Cloud,10216.03
+SPAN-0107,Software Company 107,Software,Canada,5000,UKG Pro,Workforce Management,SaaS,307852.89
+SPAN-0108,Education Company 108,Education,Germany,250,SAP SuccessFactors,HCM,SaaS,14546.51
+SPAN-0109,Retail Company 109,Retail,Netherlands,5000,BambooHR,HRIS,Cloud,345678.38
+SPAN-0110,Retail Company 110,Retail,United States,2500,Lever,ATS,Hybrid,104369.01
+SPAN-0111,Telecommunications Company 111,Telecommunications,United Kingdom,1800,ADP Workforce Now,Payroll,Cloud,111450.8
+SPAN-0112,Healthcare Company 112,Healthcare,United States,1800,HiBob,HRIS,Hybrid,77050.47
+SPAN-0113,Logistics Company 113,Logistics,Australia,250,iCIMS,ATS,Hybrid,6722.57
+SPAN-0114,Logistics Company 114,Logistics,United Kingdom,2500,Personio,HRIS,Cloud,180805.26
+SPAN-0115,Software Company 115,Software,United States,1200,ADP Workforce Now,Payroll,Hybrid,61700.59
+SPAN-0116,Financial Services Company 116,Financial Services,Netherlands,420,Lever,ATS,SaaS,18251.07
+SPAN-0117,Healthcare Company 117,Healthcare,United Kingdom,420,Lever,ATS,Hybrid,18675.53
+SPAN-0118,Media Company 118,Media,Australia,5000,Lever,ATS,Cloud,261416.04
+SPAN-0119,Logistics Company 119,Logistics,United States,420,UKG Pro,Workforce Management,SaaS,21136.82
+SPAN-0120,Healthcare Company 120,Healthcare,Ireland,5000,iCIMS,ATS,Hybrid,244769.21
+SPAN-0121,Software Company 121,Software,Germany,10000,Oracle HCM,HCM,Hybrid,606631.39
+SPAN-0122,Professional Services Company 122,Professional Services,United Kingdom,7500,Lever,ATS,Hybrid,457168.66
+SPAN-0123,Financial Services Company 123,Financial Services,Singapore,1800,Deel,Global Employment,SaaS,61143.55
+SPAN-0124,Education Company 124,Education,Canada,5000,BambooHR,HRIS,Cloud,293116.27
+SPAN-0125,Telecommunications Company 125,Telecommunications,United States,1800,Paychex,Payroll,SaaS,120503.15
+SPAN-0126,Financial Services Company 126,Financial Services,Australia,250,iCIMS,ATS,Cloud,10303.19
+SPAN-0127,Media Company 127,Media,Canada,420,BambooHR,HRIS,Hybrid,8965.86
+SPAN-0128,Education Company 128,Education,Australia,1800,UKG Pro,Workforce Management,SaaS,76616.96
+SPAN-0129,Retail Company 129,Retail,United Kingdom,1200,Paychex,Payroll,Hybrid,55407.03
+SPAN-0130,Logistics Company 130,Logistics,United States,10000,Workday,HCM,SaaS,679172.01
+SPAN-0131,Healthcare Company 131,Healthcare,France,3500,UKG Pro,Workforce Management,Cloud,262314.3
+SPAN-0132,Financial Services Company 132,Financial Services,United States,250,Oracle HCM,HCM,Hybrid,8989.79
+SPAN-0133,Telecommunications Company 133,Telecommunications,United States,1800,ADP Workforce Now,Payroll,Hybrid,110455.16
+SPAN-0134,Healthcare Company 134,Healthcare,Netherlands,25000,Oracle HCM,HCM,Hybrid,1147426.94
+SPAN-0135,Logistics Company 135,Logistics,India,7500,SAP SuccessFactors,HCM,SaaS,333540.77
+SPAN-0136,Media Company 136,Media,United States,120,ADP Workforce Now,Payroll,Hybrid,2867.91
+SPAN-0137,Retail Company 137,Retail,United Kingdom,5000,ADP Workforce Now,Payroll,SaaS,183377.33
+SPAN-0138,Logistics Company 138,Logistics,United States,7500,Greenhouse,ATS,Hybrid,287243.12
+SPAN-0139,Financial Services Company 139,Financial Services,United Kingdom,3500,Oracle HCM,HCM,Cloud,235964.21
+SPAN-0140,Manufacturing Company 140,Manufacturing,Germany,15000,Greenhouse,ATS,SaaS,929940.35
+SPAN-0141,Retail Company 141,Retail,United States,10000,Deel,Global Employment,SaaS,359462.04
+SPAN-0142,Logistics Company 142,Logistics,United States,10000,Oracle HCM,HCM,Cloud,450372.48
+SPAN-0143,Software Company 143,Software,Canada,120,Gusto,Payroll,SaaS,3566.13
+SPAN-0144,Manufacturing Company 144,Manufacturing,Canada,5000,Workday,HCM,Cloud,327125.35
+SPAN-0145,Logistics Company 145,Logistics,Netherlands,1800,Personio,HRIS,Cloud,87963.43
+SPAN-0146,Manufacturing Company 146,Manufacturing,United States,1200,SAP SuccessFactors,HCM,SaaS,80058.67
+SPAN-0147,Professional Services Company 147,Professional Services,Germany,250,Personio,HRIS,Cloud,11600.77
+SPAN-0148,Logistics Company 148,Logistics,Australia,25000,ADP Workforce Now,Payroll,Cloud,1197989.85
+SPAN-0149,Healthcare Company 149,Healthcare,Germany,650,Gusto,Payroll,Hybrid,20985.2
+SPAN-0150,Professional Services Company 150,Professional Services,United States,900,Greenhouse,ATS,Hybrid,43762.13
+SPAN-0151,Retail Company 151,Retail,United Kingdom,7500,ADP Workforce Now,Payroll,Hybrid,506081.4
+SPAN-0152,Telecommunications Company 152,Telecommunications,India,650,Rippling,Payroll,SaaS,46206.2
+SPAN-0153,Software Company 153,Software,Australia,10000,Rippling,Payroll,Cloud,475645.54
+SPAN-0154,Financial Services Company 154,Financial Services,France,250,iCIMS,ATS,Hybrid,18628.79
+SPAN-0155,Telecommunications Company 155,Telecommunications,France,120,Lever,ATS,Cloud,3639.49
+SPAN-0156,Software Company 156,Software,Canada,2500,Lever,ATS,Cloud,111234.83
+SPAN-0157,Retail Company 157,Retail,Netherlands,5000,BambooHR,HRIS,Hybrid,186074.0
+SPAN-0158,Retail Company 158,Retail,United States,7500,BambooHR,HRIS,Hybrid,155064.32
+SPAN-0159,Education Company 159,Education,United States,650,BambooHR,HRIS,Cloud,16144.02
+SPAN-0160,Professional Services Company 160,Professional Services,United States,1800,Greenhouse,ATS,Hybrid,130413.89
+SPAN-0161,Financial Services Company 161,Financial Services,Singapore,5000,Gusto,Payroll,SaaS,109139.5
+SPAN-0162,Software Company 162,Software,Canada,120,iCIMS,ATS,SaaS,6163.85
+SPAN-0163,Media Company 163,Media,United States,1200,HiBob,HRIS,SaaS,85659.29
+SPAN-0164,Media Company 164,Media,United States,10000,Workday,HCM,Hybrid,425651.49
+SPAN-0165,Manufacturing Company 165,Manufacturing,Australia,25000,Lever,ATS,Cloud,1751181.62
+SPAN-0166,Financial Services Company 166,Financial Services,United States,1800,HiBob,HRIS,SaaS,112301.61
+SPAN-0167,Logistics Company 167,Logistics,India,420,iCIMS,ATS,Hybrid,10039.16
+SPAN-0168,Financial Services Company 168,Financial Services,United States,5000,Greenhouse,ATS,Cloud,137948.33
+SPAN-0169,Logistics Company 169,Logistics,Germany,650,HiBob,HRIS,Hybrid,46165.12
+SPAN-0170,Financial Services Company 170,Financial Services,Canada,120,HiBob,HRIS,Hybrid,4353.95
+SPAN-0171,Healthcare Company 171,Healthcare,Singapore,420,Rippling,Payroll,Cloud,29479.69
+SPAN-0172,Manufacturing Company 172,Manufacturing,United Kingdom,420,Personio,HRIS,SaaS,14491.18
+SPAN-0173,Manufacturing Company 173,Manufacturing,United States,7500,BambooHR,HRIS,Hybrid,358590.05
+SPAN-0174,Media Company 174,Media,United Kingdom,250,iCIMS,ATS,SaaS,15744.19
+SPAN-0175,Healthcare Company 175,Healthcare,United States,15000,Paychex,Payroll,Hybrid,951977.19
+SPAN-0176,Education Company 176,Education,United States,120,Paychex,Payroll,SaaS,2170.78
+SPAN-0177,Financial Services Company 177,Financial Services,Germany,3500,SAP SuccessFactors,HCM,Cloud,122394.16
+SPAN-0178,Education Company 178,Education,Germany,1800,Workday,HCM,SaaS,65270.08
+SPAN-0179,Retail Company 179,Retail,United States,5000,SAP SuccessFactors,HCM,Cloud,290002.62
+SPAN-0180,Media Company 180,Media,United States,650,Greenhouse,ATS,Hybrid,16929.64
+SPAN-0181,Logistics Company 181,Logistics,Australia,420,iCIMS,ATS,SaaS,13684.51
+SPAN-0182,Logistics Company 182,Logistics,United States,5000,ADP Workforce Now,Payroll,Hybrid,264916.57
+SPAN-0183,Retail Company 183,Retail,Canada,10000,iCIMS,ATS,SaaS,451972.78
+SPAN-0184,Financial Services Company 184,Financial Services,United Kingdom,5000,Greenhouse,ATS,SaaS,341443.67
+SPAN-0185,Retail Company 185,Retail,India,15000,BambooHR,HRIS,Cloud,965828.78
+SPAN-0186,Education Company 186,Education,United States,5000,Rippling,Payroll,Hybrid,203669.97
+SPAN-0187,Software Company 187,Software,United Kingdom,1800,BambooHR,HRIS,Cloud,85571.34
+SPAN-0188,Telecommunications Company 188,Telecommunications,United States,5000,HiBob,HRIS,Cloud,99940.9
+SPAN-0189,Professional Services Company 189,Professional Services,United States,250,Greenhouse,ATS,Hybrid,4760.4
+SPAN-0190,Manufacturing Company 190,Manufacturing,Netherlands,250,Lever,ATS,Cloud,10181.28
+SPAN-0191,Logistics Company 191,Logistics,Canada,650,UKG Pro,Workforce Management,Cloud,14640.61
+SPAN-0192,Software Company 192,Software,United States,10000,Gusto,Payroll,Cloud,477078.32
+SPAN-0193,Media Company 193,Media,France,650,SAP SuccessFactors,HCM,Hybrid,40019.09
+SPAN-0194,Software Company 194,Software,United States,650,Gusto,Payroll,SaaS,27231.52
+SPAN-0195,Financial Services Company 195,Financial Services,France,900,SAP SuccessFactors,HCM,Cloud,21353.06
+SPAN-0196,Telecommunications Company 196,Telecommunications,United Kingdom,250,Greenhouse,ATS,Cloud,16251.8
+SPAN-0197,Financial Services Company 197,Financial Services,United States,10000,Deel,Global Employment,Hybrid,721020.28
+SPAN-0198,Telecommunications Company 198,Telecommunications,United States,10000,SAP SuccessFactors,HCM,Cloud,417979.76
+SPAN-0199,Logistics Company 199,Logistics,Netherlands,3500,Personio,HRIS,Cloud,105906.13
+SPAN-0200,Software Company 200,Software,India,650,SAP SuccessFactors,HCM,Cloud,31186.92
+SPAN-0201,Logistics Company 201,Logistics,India,7500,Rippling,Payroll,Cloud,371335.61
+SPAN-0202,Healthcare Company 202,Healthcare,Canada,250,Lever,ATS,SaaS,13200.19
+SPAN-0203,Professional Services Company 203,Professional Services,Netherlands,5000,Paychex,Payroll,Hybrid,201975.77
+SPAN-0204,Logistics Company 204,Logistics,United States,5000,Personio,HRIS,Cloud,208289.08
+SPAN-0205,Media Company 205,Media,Australia,120,Greenhouse,ATS,SaaS,7686.34
+SPAN-0206,Retail Company 206,Retail,Netherlands,2500,ADP Workforce Now,Payroll,Hybrid,175263.24
+SPAN-0207,Telecommunications Company 207,Telecommunications,Germany,2500,UKG Pro,Workforce Management,Hybrid,122037.6
+SPAN-0208,Manufacturing Company 208,Manufacturing,Singapore,5000,SAP SuccessFactors,HCM,Hybrid,189922.26
+SPAN-0209,Retail Company 209,Retail,Ireland,10000,iCIMS,ATS,Cloud,424439.19
+SPAN-0210,Logistics Company 210,Logistics,United States,2500,BambooHR,HRIS,SaaS,124768.99
+SPAN-0211,Manufacturing Company 211,Manufacturing,United States,7500,iCIMS,ATS,Hybrid,423682.91
+SPAN-0212,Healthcare Company 212,Healthcare,United States,5000,Gusto,Payroll,Cloud,104985.16
+SPAN-0213,Media Company 213,Media,United Kingdom,120,Personio,HRIS,SaaS,4352.45
+SPAN-0214,Media Company 214,Media,United States,650,ADP Workforce Now,Payroll,Cloud,35456.6
+SPAN-0215,Software Company 215,Software,Canada,2500,Workday,HCM,Hybrid,70912.77
+SPAN-0216,Software Company 216,Software,Canada,25000,HiBob,HRIS,Hybrid,1673153.38
+SPAN-0217,Financial Services Company 217,Financial Services,Canada,2500,UKG Pro,Workforce Management,SaaS,62501.9
+SPAN-0218,Logistics Company 218,Logistics,United States,250,HiBob,HRIS,Cloud,11177.93
+SPAN-0219,Education Company 219,Education,United States,2500,Greenhouse,ATS,Cloud,94996.56
+SPAN-0220,Software Company 220,Software,Australia,900,Paychex,Payroll,Cloud,34185.3
+SPAN-0221,Retail Company 221,Retail,United States,10000,Deel,Global Employment,Cloud,213400.1
+SPAN-0222,Telecommunications Company 222,Telecommunications,United States,1200,Personio,HRIS,Cloud,49996.92
+SPAN-0223,Financial Services Company 223,Financial Services,United States,250,Lever,ATS,SaaS,10200.29
+SPAN-0224,Professional Services Company 224,Professional Services,Canada,250,Workday,HCM,Cloud,12032.4
+SPAN-0225,Logistics Company 225,Logistics,United States,7500,SAP SuccessFactors,HCM,SaaS,526418.08
+SPAN-0226,Financial Services Company 226,Financial Services,India,15000,Lever,ATS,Hybrid,1049882.12
+SPAN-0227,Media Company 227,Media,Canada,1800,Personio,HRIS,Hybrid,87459.47
+SPAN-0228,Media Company 228,Media,United Kingdom,120,Rippling,Payroll,SaaS,3548.18
+SPAN-0229,Media Company 229,Media,United Kingdom,7500,HiBob,HRIS,SaaS,453406.56
+SPAN-0230,Telecommunications Company 230,Telecommunications,United States,650,HiBob,HRIS,Hybrid,40689.36
+SPAN-0231,Media Company 231,Media,India,900,BambooHR,HRIS,SaaS,41870.88
+SPAN-0232,Software Company 232,Software,India,420,Paychex,Payroll,SaaS,21761.99
+SPAN-0233,Education Company 233,Education,France,15000,ADP Workforce Now,Payroll,Hybrid,479017.1
+SPAN-0234,Education Company 234,Education,India,7500,BambooHR,HRIS,SaaS,452993.01
+SPAN-0235,Retail Company 235,Retail,Singapore,2500,SAP SuccessFactors,HCM,Hybrid,50683.26
+SPAN-0236,Manufacturing Company 236,Manufacturing,Canada,15000,Lever,ATS,Hybrid,834209.15
+SPAN-0237,Healthcare Company 237,Healthcare,United States,3500,Greenhouse,ATS,Cloud,168907.59
+SPAN-0238,Manufacturing Company 238,Manufacturing,United States,250,iCIMS,ATS,Hybrid,12859.6
+SPAN-0239,Telecommunications Company 239,Telecommunications,United States,650,Deel,Global Employment,Cloud,20136.84
+SPAN-0240,Professional Services Company 240,Professional Services,United Kingdom,1800,Gusto,Payroll,SaaS,119205.19
+SPAN-0241,Healthcare Company 241,Healthcare,United States,25000,Gusto,Payroll,Hybrid,1207971.11
+SPAN-0242,Financial Services Company 242,Financial Services,United Kingdom,1200,Lever,ATS,Hybrid,80485.74
+SPAN-0243,Retail Company 243,Retail,United States,1200,Paychex,Payroll,Cloud,32929.31
+SPAN-0244,Professional Services Company 244,Professional Services,France,5000,Greenhouse,ATS,Cloud,297737.39
+SPAN-0245,Professional Services Company 245,Professional Services,Germany,15000,Paychex,Payroll,Cloud,569391.15
+SPAN-0246,Healthcare Company 246,Healthcare,Germany,900,Greenhouse,ATS,SaaS,19692.42
+SPAN-0247,Logistics Company 247,Logistics,Netherlands,1800,HiBob,HRIS,SaaS,79864.24
+SPAN-0248,Logistics Company 248,Logistics,United States,25000,Workday,HCM,SaaS,608655.98
+SPAN-0249,Manufacturing Company 249,Manufacturing,India,2500,Lever,ATS,SaaS,160722.76
+SPAN-0250,Healthcare Company 250,Healthcare,United States,1800,Paychex,Payroll,Hybrid,124839.33
+SPAN-0251,Media Company 251,Media,United States,25000,Paychex,Payroll,Hybrid,586758.19
+SPAN-0252,Manufacturing Company 252,Manufacturing,Germany,900,Rippling,Payroll,Cloud,36163.48
+SPAN-0253,Professional Services Company 253,Professional Services,Germany,2500,HiBob,HRIS,Hybrid,55016.97
+SPAN-0254,Software Company 254,Software,France,25000,Paychex,Payroll,Hybrid,605623.22
+SPAN-0255,Manufacturing Company 255,Manufacturing,Singapore,5000,Deel,Global Employment,Cloud,132316.96
+SPAN-0256,Education Company 256,Education,Germany,3500,ADP Workforce Now,Payroll,SaaS,105615.05
+SPAN-0257,Media Company 257,Media,United States,2500,HiBob,HRIS,Hybrid,65739.33
+SPAN-0258,Retail Company 258,Retail,Australia,5000,BambooHR,HRIS,Hybrid,309790.94
+SPAN-0259,Software Company 259,Software,Germany,900,Paychex,Payroll,Cloud,23316.05
+SPAN-0260,Education Company 260,Education,Netherlands,650,Personio,HRIS,Cloud,23590.31
+SPAN-0261,Healthcare Company 261,Healthcare,United States,10000,Lever,ATS,Cloud,352541.1
+SPAN-0262,Media Company 262,Media,Singapore,250,Oracle HCM,HCM,Hybrid,8468.77
+SPAN-0263,Software Company 263,Software,Singapore,1800,iCIMS,ATS,Cloud,59322.97
+SPAN-0264,Retail Company 264,Retail,United States,1800,Paychex,Payroll,Cloud,51743.85
+SPAN-0265,Professional Services Company 265,Professional Services,Netherlands,3500,Workday,HCM,Cloud,144556.12
+SPAN-0266,Healthcare Company 266,Healthcare,United States,15000,Paychex,Payroll,SaaS,681254.64
+SPAN-0267,Professional Services Company 267,Professional Services,United Kingdom,7500,Greenhouse,ATS,SaaS,519663.7
+SPAN-0268,Telecommunications Company 268,Telecommunications,Canada,420,Greenhouse,ATS,Cloud,11478.89
+SPAN-0269,Retail Company 269,Retail,United States,2500,ADP Workforce Now,Payroll,Cloud,93183.33
+SPAN-0270,Software Company 270,Software,Australia,7500,Workday,HCM,SaaS,366106.29
+SPAN-0271,Logistics Company 271,Logistics,Canada,7500,Rippling,Payroll,SaaS,199445.8
+SPAN-0272,Logistics Company 272,Logistics,India,250,UKG Pro,Workforce Management,Hybrid,13144.55
+SPAN-0273,Financial Services Company 273,Financial Services,United States,1800,SAP SuccessFactors,HCM,Hybrid,69572.62
+SPAN-0274,Manufacturing Company 274,Manufacturing,United Kingdom,1200,iCIMS,ATS,Cloud,50575.31
+SPAN-0275,Healthcare Company 275,Healthcare,United Kingdom,5000,Deel,Global Employment,SaaS,300544.45
+SPAN-0276,Telecommunications Company 276,Telecommunications,United Kingdom,900,Oracle HCM,HCM,Cloud,45515.49
+SPAN-0277,Manufacturing Company 277,Manufacturing,France,15000,iCIMS,ATS,Hybrid,329969.28
+SPAN-0278,Logistics Company 278,Logistics,United Kingdom,650,Lever,ATS,Cloud,39598.82
+SPAN-0279,Retail Company 279,Retail,Canada,5000,Gusto,Payroll,Hybrid,345355.68
+SPAN-0280,Media Company 280,Media,United States,25000,Personio,HRIS,SaaS,1663643.09
+SPAN-0281,Healthcare Company 281,Healthcare,United States,250,iCIMS,ATS,Hybrid,17302.73
+SPAN-0282,Logistics Company 282,Logistics,United Kingdom,250,Deel,Global Employment,Cloud,13698.15
+SPAN-0283,Media Company 283,Media,France,650,Gusto,Payroll,Hybrid,26830.6
+SPAN-0284,Software Company 284,Software,Australia,1800,Lever,ATS,SaaS,65391.61
+SPAN-0285,Logistics Company 285,Logistics,United States,420,UKG Pro,Workforce Management,Hybrid,13108.15
+SPAN-0286,Logistics Company 286,Logistics,Singapore,120,ADP Workforce Now,Payroll,Cloud,6874.94
+SPAN-0287,Retail Company 287,Retail,India,5000,UKG Pro,Workforce Management,Hybrid,292557.88
+SPAN-0288,Education Company 288,Education,India,420,iCIMS,ATS,SaaS,7670.57
+SPAN-0289,Software Company 289,Software,Canada,420,Workday,HCM,SaaS,24643.21
+SPAN-0290,Education Company 290,Education,United States,3500,Workday,HCM,SaaS,211145.7
+SPAN-0291,Financial Services Company 291,Financial Services,France,3500,Personio,HRIS,Hybrid,95619.9
+SPAN-0292,Manufacturing Company 292,Manufacturing,Australia,250,HiBob,HRIS,Hybrid,10617.45
+SPAN-0293,Manufacturing Company 293,Manufacturing,United States,250,Greenhouse,ATS,Hybrid,11503.21
+SPAN-0294,Manufacturing Company 294,Manufacturing,Germany,650,Workday,HCM,SaaS,36372.39
+SPAN-0295,Retail Company 295,Retail,United States,15000,Gusto,Payroll,Hybrid,318925.89
+SPAN-0296,Healthcare Company 296,Healthcare,United States,5000,Personio,HRIS,Cloud,286270.35
+SPAN-0297,Software Company 297,Software,France,3500,Lever,ATS,SaaS,246852.0
+SPAN-0298,Education Company 298,Education,France,5000,Lever,ATS,Cloud,367253.92
+SPAN-0299,Professional Services Company 299,Professional Services,Germany,3500,HiBob,HRIS,SaaS,127155.02
+SPAN-0300,Logistics Company 300,Logistics,United States,250,Deel,Global Employment,SaaS,8022.93
+SPAN-0301,Telecommunications Company 301,Telecommunications,United States,15000,UKG Pro,Workforce Management,Hybrid,402608.25
+SPAN-0302,Manufacturing Company 302,Manufacturing,United States,1800,HiBob,HRIS,SaaS,36764.31
+SPAN-0303,Education Company 303,Education,United States,25000,Lever,ATS,Cloud,796059.22
+SPAN-0304,Software Company 304,Software,United States,15000,iCIMS,ATS,Hybrid,929526.19
+SPAN-0305,Manufacturing Company 305,Manufacturing,Netherlands,900,ADP Workforce Now,Payroll,SaaS,63503.9
+SPAN-0306,Retail Company 306,Retail,United Kingdom,7500,UKG Pro,Workforce Management,Cloud,428502.69
+SPAN-0307,Manufacturing Company 307,Manufacturing,United States,3500,HiBob,HRIS,Hybrid,202663.07
+SPAN-0308,Logistics Company 308,Logistics,France,5000,UKG Pro,Workforce Management,Cloud,152168.18
+SPAN-0309,Education Company 309,Education,India,250,Paychex,Payroll,Cloud,7221.78
+SPAN-0310,Professional Services Company 310,Professional Services,India,15000,SAP SuccessFactors,HCM,SaaS,395872.53
+SPAN-0311,Professional Services Company 311,Professional Services,United States,120,iCIMS,ATS,Cloud,6220.54
+SPAN-0312,Manufacturing Company 312,Manufacturing,India,1200,ADP Workforce Now,Payroll,Cloud,79299.05
+SPAN-0313,Logistics Company 313,Logistics,India,250,UKG Pro,Workforce Management,Cloud,16046.35
+SPAN-0314,Retail Company 314,Retail,Ireland,10000,Personio,HRIS,SaaS,313463.74
+SPAN-0315,Logistics Company 315,Logistics,Netherlands,3500,SAP SuccessFactors,HCM,SaaS,225126.52
+SPAN-0316,Financial Services Company 316,Financial Services,United States,5000,Personio,HRIS,SaaS,298824.59
+SPAN-0317,Logistics Company 317,Logistics,India,120,UKG Pro,Workforce Management,SaaS,8383.5
+SPAN-0318,Retail Company 318,Retail,India,3500,ADP Workforce Now,Payroll,Cloud,106590.87
+SPAN-0319,Software Company 319,Software,Netherlands,900,Rippling,Payroll,Hybrid,41180.65
+SPAN-0320,Media Company 320,Media,Germany,1200,Personio,HRIS,Cloud,67492.32
+SPAN-0321,Financial Services Company 321,Financial Services,United States,900,ADP Workforce Now,Payroll,Hybrid,18917.13
+SPAN-0322,Manufacturing Company 322,Manufacturing,United Kingdom,1200,Deel,Global Employment,SaaS,48440.81
+SPAN-0323,Retail Company 323,Retail,United States,120,iCIMS,ATS,SaaS,3778.9
+SPAN-0324,Education Company 324,Education,India,1800,Deel,Global Employment,SaaS,112780.19
+SPAN-0325,Financial Services Company 325,Financial Services,Australia,2500,Workday,HCM,SaaS,52766.02
+SPAN-0326,Manufacturing Company 326,Manufacturing,Singapore,25000,Paychex,Payroll,SaaS,1139638.07
+SPAN-0327,Financial Services Company 327,Financial Services,Germany,15000,Paychex,Payroll,Hybrid,880812.77
+SPAN-0328,Media Company 328,Media,United States,250,HiBob,HRIS,Cloud,17069.4
+SPAN-0329,Professional Services Company 329,Professional Services,United Kingdom,900,Oracle HCM,HCM,SaaS,66500.69
+SPAN-0330,Software Company 330,Software,Germany,10000,iCIMS,ATS,Hybrid,383324.55
+SPAN-0331,Telecommunications Company 331,Telecommunications,United Kingdom,15000,UKG Pro,Workforce Management,Hybrid,590586.42
+SPAN-0332,Professional Services Company 332,Professional Services,United States,650,Oracle HCM,HCM,Hybrid,38989.25
+SPAN-0333,Software Company 333,Software,United States,10000,Rippling,Payroll,Cloud,299600.11
+SPAN-0334,Media Company 334,Media,United Kingdom,15000,Rippling,Payroll,SaaS,370212.35
+SPAN-0335,Software Company 335,Software,United States,10000,Lever,ATS,Cloud,598124.79
+SPAN-0336,Healthcare Company 336,Healthcare,India,1200,UKG Pro,Workforce Management,Cloud,29124.7
+SPAN-0337,Professional Services Company 337,Professional Services,India,3500,Rippling,Payroll,SaaS,126894.72
+SPAN-0338,Healthcare Company 338,Healthcare,Germany,900,Lever,ATS,Cloud,45764.63
+SPAN-0339,Professional Services Company 339,Professional Services,Canada,25000,Deel,Global Employment,Hybrid,1023481.18
+SPAN-0340,Retail Company 340,Retail,Netherlands,2500,UKG Pro,Workforce Management,SaaS,173602.31
+SPAN-0341,Manufacturing Company 341,Manufacturing,United Kingdom,5000,Deel,Global Employment,Hybrid,207774.53
+SPAN-0342,Education Company 342,Education,Germany,1200,BambooHR,HRIS,Cloud,71105.95
+SPAN-0343,Media Company 343,Media,France,15000,SAP SuccessFactors,HCM,Cloud,992495.53
+SPAN-0344,Education Company 344,Education,United States,420,Rippling,Payroll,Hybrid,23652.22
+SPAN-0345,Software Company 345,Software,Canada,7500,Gusto,Payroll,Hybrid,200018.66
+SPAN-0346,Media Company 346,Media,India,900,ADP Workforce Now,Payroll,Hybrid,47949.05
+SPAN-0347,Professional Services Company 347,Professional Services,United Kingdom,25000,SAP SuccessFactors,HCM,Hybrid,1241021.37
+SPAN-0348,Manufacturing Company 348,Manufacturing,Germany,420,iCIMS,ATS,Hybrid,27551.38
+SPAN-0349,Education Company 349,Education,Canada,900,Deel,Global Employment,Hybrid,48757.57
+SPAN-0350,Healthcare Company 350,Healthcare,United States,15000,Workday,HCM,Hybrid,939373.7
+SPAN-0351,Healthcare Company 351,Healthcare,Germany,3500,BambooHR,HRIS,SaaS,94583.3
+SPAN-0352,Media Company 352,Media,France,7500,Rippling,Payroll,Cloud,316171.65
+SPAN-0353,Logistics Company 353,Logistics,United States,250,UKG Pro,Workforce Management,Cloud,18065.78
+SPAN-0354,Manufacturing Company 354,Manufacturing,Australia,250,iCIMS,ATS,SaaS,13387.35
+SPAN-0355,Retail Company 355,Retail,France,1200,UKG Pro,Workforce Management,Cloud,64110.08
+SPAN-0356,Healthcare Company 356,Healthcare,United States,2500,Deel,Global Employment,SaaS,173472.14
+SPAN-0357,Professional Services Company 357,Professional Services,United States,10000,ADP Workforce Now,Payroll,Cloud,416638.42
+SPAN-0358,Logistics Company 358,Logistics,India,1800,Gusto,Payroll,Cloud,68330.19
+SPAN-0359,Financial Services Company 359,Financial Services,United Kingdom,15000,ADP Workforce Now,Payroll,Hybrid,669605.7
+SPAN-0360,Professional Services Company 360,Professional Services,United Kingdom,1800,Deel,Global Employment,Cloud,66966.21
+SPAN-0361,Education Company 361,Education,Singapore,7500,Rippling,Payroll,Cloud,507036.03
+SPAN-0362,Healthcare Company 362,Healthcare,India,5000,Paychex,Payroll,SaaS,348028.06
+SPAN-0363,Manufacturing Company 363,Manufacturing,United States,250,Lever,ATS,Cloud,11072.43
+SPAN-0364,Retail Company 364,Retail,Canada,900,iCIMS,ATS,Cloud,45596.08
+SPAN-0365,Retail Company 365,Retail,United States,3500,Oracle HCM,HCM,Hybrid,208385.94
+SPAN-0366,Financial Services Company 366,Financial Services,United Kingdom,1800,iCIMS,ATS,Hybrid,91331.77
+SPAN-0367,Telecommunications Company 367,Telecommunications,United States,900,Oracle HCM,HCM,SaaS,18926.33
+SPAN-0368,Manufacturing Company 368,Manufacturing,Australia,2500,Greenhouse,ATS,SaaS,122797.44
+SPAN-0369,Retail Company 369,Retail,United States,2500,Personio,HRIS,SaaS,153345.39
+SPAN-0370,Media Company 370,Media,Netherlands,15000,Workday,HCM,Hybrid,554293.16
+SPAN-0371,Media Company 371,Media,United States,1200,Gusto,Payroll,Cloud,72587.27
+SPAN-0372,Financial Services Company 372,Financial Services,Germany,5000,Personio,HRIS,SaaS,345348.81
+SPAN-0373,Media Company 373,Media,France,420,SAP SuccessFactors,HCM,SaaS,17542.53
+SPAN-0374,Logistics Company 374,Logistics,United Kingdom,1800,Greenhouse,ATS,Cloud,98037.55
+SPAN-0375,Media Company 375,Media,United States,1800,Gusto,Payroll,SaaS,54850.01
+SPAN-0376,Healthcare Company 376,Healthcare,United States,1800,Personio,HRIS,Hybrid,46971.2
+SPAN-0377,Education Company 377,Education,United States,420,Oracle HCM,HCM,Hybrid,10531.59
+SPAN-0378,Software Company 378,Software,United States,25000,Rippling,Payroll,Cloud,1155445.18
+SPAN-0379,Retail Company 379,Retail,United Kingdom,5000,HiBob,HRIS,SaaS,192336.49
+SPAN-0380,Financial Services Company 380,Financial Services,Germany,1200,SAP SuccessFactors,HCM,SaaS,64120.92
+SPAN-0381,Financial Services Company 381,Financial Services,Singapore,120,Lever,ATS,Cloud,8691.93
+SPAN-0382,Manufacturing Company 382,Manufacturing,Netherlands,1800,UKG Pro,Workforce Management,SaaS,92431.72
+SPAN-0383,Healthcare Company 383,Healthcare,United Kingdom,5000,Rippling,Payroll,SaaS,155737.15
+SPAN-0384,Retail Company 384,Retail,Canada,1800,Personio,HRIS,SaaS,86580.79
+SPAN-0385,Education Company 385,Education,Singapore,15000,HiBob,HRIS,SaaS,1058500.16
+SPAN-0386,Media Company 386,Media,France,3500,Workday,HCM,Hybrid,149014.36
+SPAN-0387,Software Company 387,Software,United States,120,Greenhouse,ATS,SaaS,7298.59
+SPAN-0388,Retail Company 388,Retail,United Kingdom,420,Personio,HRIS,Cloud,10913.47
+SPAN-0389,Logistics Company 389,Logistics,United States,650,Lever,ATS,SaaS,12848.38
+SPAN-0390,Software Company 390,Software,Germany,420,Oracle HCM,HCM,Hybrid,29187.45
+SPAN-0391,Manufacturing Company 391,Manufacturing,Australia,7500,Oracle HCM,HCM,Hybrid,246155.34
+SPAN-0392,Retail Company 392,Retail,Singapore,7500,Rippling,Payroll,Cloud,522508.49
+SPAN-0393,Logistics Company 393,Logistics,Canada,2500,Lever,ATS,SaaS,115804.99
+SPAN-0394,Education Company 394,Education,Canada,420,Oracle HCM,HCM,SaaS,29630.22
+SPAN-0395,Professional Services Company 395,Professional Services,Australia,2500,Gusto,Payroll,SaaS,167134.93
+SPAN-0396,Manufacturing Company 396,Manufacturing,Netherlands,7500,Rippling,Payroll,Cloud,159166.99
+SPAN-0397,Logistics Company 397,Logistics,India,3500,Rippling,Payroll,Cloud,77458.28
+SPAN-0398,Logistics Company 398,Logistics,Ireland,25000,Personio,HRIS,Hybrid,1810823.54
+SPAN-0399,Healthcare Company 399,Healthcare,Germany,2500,Oracle HCM,HCM,Hybrid,109096.76
+SPAN-0400,Telecommunications Company 400,Telecommunications,Ireland,120,ADP Workforce Now,Payroll,SaaS,7408.57
+SPAN-0401,Healthcare Company 401,Healthcare,United States,3500,UKG Pro,Workforce Management,Hybrid,115854.26
+SPAN-0402,Software Company 402,Software,United States,900,SAP SuccessFactors,HCM,Cloud,38482.01
+SPAN-0403,Healthcare Company 403,Healthcare,United Kingdom,1200,Personio,HRIS,Hybrid,51675.85
+SPAN-0404,Software Company 404,Software,United States,15000,Lever,ATS,Cloud,696748.92
+SPAN-0405,Financial Services Company 405,Financial Services,India,900,SAP SuccessFactors,HCM,Cloud,62781.55
+SPAN-0406,Media Company 406,Media,United States,15000,Deel,Global Employment,SaaS,947171.61
+SPAN-0407,Telecommunications Company 407,Telecommunications,United States,10000,Paychex,Payroll,Hybrid,668065.87
+SPAN-0408,Healthcare Company 408,Healthcare,United States,1800,Rippling,Payroll,Cloud,93803.82
+SPAN-0409,Education Company 409,Education,United States,5000,Gusto,Payroll,Cloud,150217.42
+SPAN-0410,Professional Services Company 410,Professional Services,United States,25000,BambooHR,HRIS,SaaS,1614767.24
+SPAN-0411,Healthcare Company 411,Healthcare,Ireland,120,SAP SuccessFactors,HCM,Hybrid,7348.49
+SPAN-0412,Logistics Company 412,Logistics,Canada,25000,Workday,HCM,SaaS,1113638.37
+SPAN-0413,Logistics Company 413,Logistics,Netherlands,900,Rippling,Payroll,Hybrid,46480.16
+SPAN-0414,Professional Services Company 414,Professional Services,United States,5000,Gusto,Payroll,SaaS,267759.54
+SPAN-0415,Software Company 415,Software,France,120,HiBob,HRIS,Hybrid,3883.58
+SPAN-0416,Media Company 416,Media,India,7500,BambooHR,HRIS,SaaS,185756.51
+SPAN-0417,Education Company 417,Education,Australia,1800,iCIMS,ATS,Hybrid,83886.42
+SPAN-0418,Logistics Company 418,Logistics,India,25000,Gusto,Payroll,Cloud,1311213.4
+SPAN-0419,Media Company 419,Media,Canada,1200,BambooHR,HRIS,Cloud,83039.41
+SPAN-0420,Media Company 420,Media,United States,2500,Rippling,Payroll,Hybrid,145585.5
+SPAN-0421,Media Company 421,Media,France,15000,BambooHR,HRIS,Cloud,703438.18
+SPAN-0422,Retail Company 422,Retail,United States,1800,Deel,Global Employment,Cloud,96000.75
+SPAN-0423,Professional Services Company 423,Professional Services,Australia,3500,Greenhouse,ATS,SaaS,159111.7
+SPAN-0424,Healthcare Company 424,Healthcare,United States,10000,Personio,HRIS,SaaS,667375.28
+SPAN-0425,Software Company 425,Software,United Kingdom,250,Gusto,Payroll,Hybrid,7600.46
+SPAN-0426,Retail Company 426,Retail,United States,2500,Personio,HRIS,SaaS,156637.71
+SPAN-0427,Professional Services Company 427,Professional Services,Australia,1200,Gusto,Payroll,Hybrid,42317.8
+SPAN-0428,Telecommunications Company 428,Telecommunications,Canada,2500,SAP SuccessFactors,HCM,Hybrid,168560.41
+SPAN-0429,Education Company 429,Education,Canada,2500,Gusto,Payroll,SaaS,59667.75
+SPAN-0430,Logistics Company 430,Logistics,Germany,650,ADP Workforce Now,Payroll,Cloud,18525.68
+SPAN-0431,Financial Services Company 431,Financial Services,United States,5000,Rippling,Payroll,Hybrid,294047.7
+SPAN-0432,Education Company 432,Education,United States,1800,Rippling,Payroll,Hybrid,103883.3
+SPAN-0433,Professional Services Company 433,Professional Services,United States,5000,UKG Pro,Workforce Management,Hybrid,262166.58
+SPAN-0434,Telecommunications Company 434,Telecommunications,United Kingdom,2500,ADP Workforce Now,Payroll,SaaS,62780.4
+SPAN-0435,Logistics Company 435,Logistics,United Kingdom,250,UKG Pro,Workforce Management,Cloud,17856.25
+SPAN-0436,Healthcare Company 436,Healthcare,Germany,10000,iCIMS,ATS,Hybrid,701826.95
+SPAN-0437,Retail Company 437,Retail,United States,3500,Lever,ATS,SaaS,71531.13
+SPAN-0438,Education Company 438,Education,Canada,420,Workday,HCM,SaaS,9266.75
+SPAN-0439,Retail Company 439,Retail,France,900,Workday,HCM,Hybrid,47426.4
+SPAN-0440,Education Company 440,Education,Canada,15000,BambooHR,HRIS,SaaS,960683.73
+SPAN-0441,Media Company 441,Media,United States,120,iCIMS,ATS,SaaS,4816.15
+SPAN-0442,Professional Services Company 442,Professional Services,Netherlands,2500,Personio,HRIS,Hybrid,107778.12
+SPAN-0443,Telecommunications Company 443,Telecommunications,United Kingdom,2500,Oracle HCM,HCM,SaaS,114339.52
+SPAN-0444,Media Company 444,Media,Germany,2500,Greenhouse,ATS,Hybrid,82423.99
+SPAN-0445,Manufacturing Company 445,Manufacturing,United Kingdom,15000,Oracle HCM,HCM,SaaS,590574.25
+SPAN-0446,Healthcare Company 446,Healthcare,Germany,15000,Personio,HRIS,Cloud,639605.72
+SPAN-0447,Retail Company 447,Retail,Ireland,420,iCIMS,ATS,Cloud,15805.62
+SPAN-0448,Education Company 448,Education,Australia,250,Oracle HCM,HCM,SaaS,16610.79
+SPAN-0449,Education Company 449,Education,United States,10000,Gusto,Payroll,Cloud,387531.47
+SPAN-0450,Retail Company 450,Retail,United States,420,Workday,HCM,Cloud,16440.54
+SPAN-0451,Professional Services Company 451,Professional Services,Germany,10000,Deel,Global Employment,Cloud,393694.27
+SPAN-0452,Professional Services Company 452,Professional Services,United States,250,Personio,HRIS,Cloud,17375.33
+SPAN-0453,Software Company 453,Software,Germany,2500,Gusto,Payroll,Cloud,46928.14
+SPAN-0454,Logistics Company 454,Logistics,United Kingdom,250,UKG Pro,Workforce Management,Cloud,15835.69
+SPAN-0455,Professional Services Company 455,Professional Services,Netherlands,15000,Oracle HCM,HCM,Cloud,807428.41
+SPAN-0456,Healthcare Company 456,Healthcare,United States,420,HiBob,HRIS,Hybrid,13022.48
+SPAN-0457,Software Company 457,Software,United Kingdom,2500,Greenhouse,ATS,Cloud,131981.25
+SPAN-0458,Telecommunications Company 458,Telecommunications,United States,5000,Rippling,Payroll,SaaS,135626.93
+SPAN-0459,Healthcare Company 459,Healthcare,United States,650,Oracle HCM,HCM,Cloud,35535.34
+SPAN-0460,Financial Services Company 460,Financial Services,United States,10000,ADP Workforce Now,Payroll,Cloud,314631.91
+SPAN-0461,Financial Services Company 461,Financial Services,Germany,2500,UKG Pro,Workforce Management,Cloud,186668.19
+SPAN-0462,Logistics Company 462,Logistics,United States,7500,BambooHR,HRIS,SaaS,330391.23
+SPAN-0463,Manufacturing Company 463,Manufacturing,Singapore,900,SAP SuccessFactors,HCM,Hybrid,52939.59
+SPAN-0464,Financial Services Company 464,Financial Services,Germany,120,ADP Workforce Now,Payroll,Cloud,6455.47
+SPAN-0465,Education Company 465,Education,Singapore,3500,HiBob,HRIS,Cloud,129164.84
+SPAN-0466,Education Company 466,Education,United States,25000,Deel,Global Employment,Hybrid,1801081.88
+SPAN-0467,Healthcare Company 467,Healthcare,United States,3500,SAP SuccessFactors,HCM,Hybrid,254196.93
+SPAN-0468,Manufacturing Company 468,Manufacturing,India,7500,Personio,HRIS,Cloud,524443.93
+SPAN-0469,Professional Services Company 469,Professional Services,Netherlands,250,UKG Pro,Workforce Management,Cloud,12793.48
+SPAN-0470,Software Company 470,Software,Netherlands,120,iCIMS,ATS,SaaS,6266.33
+SPAN-0471,Retail Company 471,Retail,United States,250,Paychex,Payroll,Hybrid,12827.41
+SPAN-0472,Retail Company 472,Retail,Canada,250,Personio,HRIS,SaaS,7099.91
+SPAN-0473,Software Company 473,Software,India,7500,SAP SuccessFactors,HCM,Hybrid,199256.29
+SPAN-0474,Logistics Company 474,Logistics,United States,120,HiBob,HRIS,SaaS,8369.14
+SPAN-0475,Retail Company 475,Retail,United Kingdom,900,HiBob,HRIS,Cloud,19855.82
+SPAN-0476,Education Company 476,Education,United States,15000,Rippling,Payroll,Hybrid,624134.24
+SPAN-0477,Logistics Company 477,Logistics,France,1800,ADP Workforce Now,Payroll,Hybrid,134332.4
+SPAN-0478,Software Company 478,Software,United States,250,Lever,ATS,Cloud,8844.9
+SPAN-0479,Professional Services Company 479,Professional Services,Australia,15000,Workday,HCM,Cloud,355555.92
+SPAN-0480,Professional Services Company 480,Professional Services,Netherlands,1200,Personio,HRIS,Cloud,26242.02
+SPAN-0481,Telecommunications Company 481,Telecommunications,Singapore,10000,Oracle HCM,HCM,SaaS,597089.48
+SPAN-0482,Manufacturing Company 482,Manufacturing,Canada,420,Rippling,Payroll,SaaS,31061.26
+SPAN-0483,Retail Company 483,Retail,United Kingdom,7500,Rippling,Payroll,Hybrid,488173.49
+SPAN-0484,Retail Company 484,Retail,United States,15000,Gusto,Payroll,Hybrid,622608.09
+SPAN-0485,Software Company 485,Software,United States,420,Workday,HCM,SaaS,27272.34
+SPAN-0486,Education Company 486,Education,France,5000,HiBob,HRIS,SaaS,268104.63
+SPAN-0487,Telecommunications Company 487,Telecommunications,United States,420,Workday,HCM,Cloud,10297.03
+SPAN-0488,Telecommunications Company 488,Telecommunications,Australia,1200,Personio,HRIS,Cloud,81067.69
+SPAN-0489,Telecommunications Company 489,Telecommunications,United States,5000,Lever,ATS,Cloud,187564.51
+SPAN-0490,Professional Services Company 490,Professional Services,United States,3500,Workday,HCM,Cloud,249941.75
+SPAN-0491,Education Company 491,Education,United States,1200,iCIMS,ATS,Cloud,23702.15
+SPAN-0492,Telecommunications Company 492,Telecommunications,France,900,Workday,HCM,Cloud,20728.02
+SPAN-0493,Professional Services Company 493,Professional Services,United States,5000,HiBob,HRIS,Hybrid,337124.56
+SPAN-0494,Media Company 494,Media,United Kingdom,120,ADP Workforce Now,Payroll,SaaS,4072.21
+SPAN-0495,Retail Company 495,Retail,United Kingdom,900,Deel,Global Employment,Cloud,56496.05
+SPAN-0496,Software Company 496,Software,United States,900,UKG Pro,Workforce Management,Cloud,21855.3
+SPAN-0497,Professional Services Company 497,Professional Services,Canada,5000,SAP SuccessFactors,HCM,Hybrid,152308.74
+SPAN-0498,Healthcare Company 498,Healthcare,Germany,25000,Deel,Global Employment,Cloud,681853.13
+SPAN-0499,Software Company 499,Software,Netherlands,900,Paychex,Payroll,Cloud,66714.22
+SPAN-0500,Financial Services Company 500,Financial Services,Canada,10000,Greenhouse,ATS,Cloud,514595.27

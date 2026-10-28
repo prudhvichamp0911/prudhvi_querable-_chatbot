@@ -1,0 +1,30 @@
+# Queryable Chatbot - backend dependencies
+# python -m pip install -r requirements.txt   (Python 3.10+)
+
+# --- web framework
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.5
+python-dotenv==1.0.1
+
+# --- VeloDB / Apache Doris (MySQL wire protocol)
+# Replaces pymongo. VeloDB speaks MySQL, so this is the client.
+PyMySQL==1.1.1
+
+# --- LLM access through OpenRouter
+# ChatOpenAI is pointed at OpenRouter's OpenAI-compatible endpoint.
+langchain-core==0.3.29
+langchain-openai==0.2.14
+httpx==0.27.2
+requests==2.32.3
+
+# --- data loading
+pandas==2.2.3
+
+# --- tests
+pytest==8.3.4
+
+# --- optional: Graphiti + Neo4j knowledge layer (GRAPHITI_ENABLED=true)
+# Left out by default because it pulls a large dependency tree and the
+# chatbot runs fine without it. Install only if you turn the feature on:
+#   pip install graphiti-core==0.3.0

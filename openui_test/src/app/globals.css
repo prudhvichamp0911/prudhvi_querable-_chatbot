@@ -1,0 +1,580 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border: 0 solid;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+img,
+svg,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+img,
+video {
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: #07080d;
+  color: #f1f2f8;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =========================================================
+   TOKENS
+   One palette for the custom chrome; theme.ts feeds the same
+   values to OpenUI. The --page-ink / --brand-* / --control-*
+   names are kept because the voice dock and query inspector
+   use them.
+   ========================================================= */
+
+@property --qc-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.qc-app {
+  --qc-bg: #07080d;
+  --qc-panel: rgba(19, 21, 32, 0.72);
+  --qc-panel-solid: #141723;
+  --qc-panel-raised: rgba(34, 38, 55, 0.8);
+  --qc-glass-blur: blur(22px) saturate(140%);
+  --qc-ink: #f1f2f8;
+  --qc-ink-2: #b1b6c9;
+  --qc-ink-3: #80869c;
+  --qc-line: rgba(255, 255, 255, 0.07);
+  --qc-line-strong: rgba(255, 255, 255, 0.13);
+  --qc-accent: #ff7f5c;
+  --qc-accent-hover: #ff9878;
+  --qc-accent-2: #ff5d8f;
+  --qc-on-accent: #1c0c06;
+  --qc-accent-soft: rgba(255, 127, 92, 0.14);
+  --qc-focus: #ff9878;
+  --qc-danger: #ff8f86;
+  --qc-success: #6fdc9a;
+  --qc-field: rgba(8, 9, 15, 0.6);
+  --qc-shadow: 0 1px 1px rgba(0, 0, 0, 0.4), 0 18px 48px rgba(0, 0, 0, 0.45);
+  --qc-edge: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  /* Aurora */
+  --qc-aurora-a: rgba(255, 112, 76, 0.42);
+  --qc-aurora-b: rgba(64, 104, 255, 0.36);
+  --qc-aurora-c: rgba(30, 200, 170, 0.26);
+  --qc-grid-line: rgba(255, 255, 255, 0.035);
+  --qc-vignette: rgba(0, 0, 0, 0.55);
+  /* Chart series, same order as theme.ts */
+  --qc-series-1: #6b9bff;
+  --qc-series-2: #ff7f5c;
+  --qc-series-3: #2fd0b0;
+  --qc-series-4: #ffc247;
+  --qc-series-5: #b98cff;
+  --qc-series-6: #ff6b9d;
+  --qc-series-7: #7ee08a;
+  --qc-series-8: #58c7ff;
+
+  --page-ink: var(--qc-ink);
+  --brand-surface: var(--qc-panel);
+  --brand-border: var(--qc-line-strong);
+  --brand-muted: var(--qc-ink-2);
+  --control-surface: var(--qc-panel);
+  --control-hover: var(--qc-panel-raised);
+  --control-border: var(--qc-line-strong);
+  --scroll-track: transparent;
+  --scroll-thumb: rgba(255, 255, 255, 0.14);
+
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+  background: var(--qc-bg);
+  color: var(--qc-ink);
+  transition: background-color 240ms ease, color 240ms ease;
+}
+
+.qc-app[data-theme="light"] {
+  --qc-bg: #f4f1ec;
+  --qc-panel: rgba(255, 255, 255, 0.7);
+  --qc-panel-solid: #ffffff;
+  --qc-panel-raised: rgba(255, 255, 255, 0.92);
+  --qc-ink: #1a1c25;
+  --qc-ink-2: #515768;
+  --qc-ink-3: #7a8091;
+  --qc-line: rgba(28, 30, 40, 0.08);
+  --qc-line-strong: rgba(28, 30, 40, 0.14);
+  --qc-accent: #d84a24;
+  --qc-accent-hover: #c4401c;
+  --qc-accent-2: #d93a72;
+  --qc-on-accent: #ffffff;
+  --qc-accent-soft: rgba(216, 74, 36, 0.1);
+  --qc-focus: #d84a24;
+  --qc-danger: #b3261e;
+  --qc-success: #1f7a45;
+  --qc-field: rgba(255, 255, 255, 0.85);
+  --qc-shadow: 0 1px 2px rgba(28, 30, 40, 0.06), 0 18px 44px rgba(60, 40, 30, 0.1);
+  --qc-edge: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  --qc-aurora-a: rgba(255, 140, 100, 0.34);
+  --qc-aurora-b: rgba(110, 140, 255, 0.24);
+  --qc-aurora-c: rgba(60, 200, 170, 0.2);
+  --qc-grid-line: rgba(40, 30, 20, 0.04);
+  --qc-vignette: rgba(120, 90, 60, 0.12);
+  --scroll-thumb: rgba(28, 30, 40, 0.16);
+  --qc-series-1: #2f6be0;
+  --qc-series-2: #e5532d;
+  --qc-series-3: #0f9e85;
+  --qc-series-4: #c98a00;
+  --qc-series-5: #8b52e0;
+  --qc-series-6: #d93a72;
+  --qc-series-7: #2f9a46;
+  --qc-series-8: #0f8fcf;
+}
+
+.qc-app :focus-visible {
+  outline: 2px solid var(--qc-focus);
+  outline-offset: 2px;
+}
+
+/* =========================================================
+   CINEMATIC BACKDROP
+   Three aurora lights drift slowly (transform only, GPU), over
+   a fading grid, film grain and a vignette.
+   ========================================================= */
+
+.qc-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.qc-aurora {
+  position: absolute;
+  width: 70vmax;
+  height: 70vmax;
+  border-radius: 50%;
+  will-change: transform;
+}
+
+.qc-aurora--a {
+  top: -38vmax;
+  right: -20vmax;
+  background: radial-gradient(circle at center, var(--qc-aurora-a), transparent 62%);
+  animation: qc-drift-a 26s ease-in-out infinite alternate;
+}
+
+.qc-aurora--b {
+  bottom: -42vmax;
+  left: -22vmax;
+  background: radial-gradient(circle at center, var(--qc-aurora-b), transparent 62%);
+  animation: qc-drift-b 32s ease-in-out infinite alternate;
+}
+
+.qc-aurora--c {
+  top: 30%;
+  left: 38%;
+  width: 46vmax;
+  height: 46vmax;
+  background: radial-gradient(circle at center, var(--qc-aurora-c), transparent 64%);
+  animation: qc-drift-c 38s ease-in-out infinite alternate;
+}
+
+.qc-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--qc-grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--qc-grid-line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, #000 30%, transparent 100%);
+}
+
+.qc-grain {
+  position: absolute;
+  inset: -50%;
+  opacity: 0.07;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.qc-app[data-theme="light"] .qc-grain {
+  opacity: 0.05;
+}
+
+.qc-vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 120% 90% at 50% 45%, transparent 55%, var(--qc-vignette) 100%);
+}
+
+@keyframes qc-drift-a {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(-12vmax, 8vmax, 0) scale(1.15); }
+}
+
+@keyframes qc-drift-b {
+  from { transform: translate3d(0, 0, 0) scale(1.05); }
+  to { transform: translate3d(14vmax, -10vmax, 0) scale(0.92); }
+}
+
+@keyframes qc-drift-c {
+  from { transform: translate3d(0, 0, 0) scale(0.9); opacity: 0.7; }
+  to { transform: translate3d(-16vmax, -12vmax, 0) scale(1.1); opacity: 1; }
+}
+
+/* =========================================================
+   OPENUI SHELL
+   ========================================================= */
+
+.qc-interface {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.qc-app .openui-agent-container {
+  background: transparent;
+}
+
+/* OpenUI fades the message list by painting gradients in the panel colour,
+   which leaves a tinted band over the aurora. Fade the content itself with
+   a mask instead, so the backdrop stays clean. */
+.qc-app .openui-agent-thread-scroll-container::before,
+.qc-app .openui-agent-thread-scroll-container::after {
+  display: none;
+}
+
+.qc-app .openui-agent-thread-scroll-area {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 22px, #000 calc(100% - 44px), transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 22px, #000 calc(100% - 44px), transparent 100%);
+}
+
+/* Header: model switcher on the left, tools on the right, one row. */
+.qc-thread-header .openui-agent-thread-header__title {
+  display: none;
+}
+
+.qc-thread-header {
+  padding-bottom: var(--openui-space-s, 8px);
+  border-bottom: 1px solid var(--qc-line);
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--qc-bg) 55%, transparent), transparent);
+}
+
+.qc-thread-header .openui-agent-thread-header__actions {
+  flex: 1 1 auto;
+  min-width: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.qc-header-tools {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+/* Sidebar: floating glass rail over the aurora. */
+.qc-app .openui-agent-sidebar-container {
+  background: var(--qc-panel);
+  backdrop-filter: var(--qc-glass-blur);
+  -webkit-backdrop-filter: var(--qc-glass-blur);
+  border-right: 1px solid var(--qc-line);
+  box-shadow: var(--qc-edge);
+}
+
+.qc-app .openui-agent-sidebar-header__agent-name,
+.qc-app .openui-agent-mobile-header-agent-name {
+  font-weight: 750;
+  letter-spacing: -0.01em;
+}
+
+.qc-app .openui-agent-new-chat-button {
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--qc-accent), var(--qc-accent-2));
+  color: var(--qc-on-accent);
+  font-weight: 650;
+  box-shadow: 0 8px 24px -8px var(--qc-accent);
+}
+
+.qc-app .openui-agent-new-chat-button:hover {
+  filter: brightness(1.08);
+}
+
+.qc-app .openui-agent-thread-button--selected {
+  background: var(--qc-accent-soft);
+}
+
+/* Welcome: cinematic serif headline. */
+.qc-app .openui-agent-welcome-screen__title {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(40px, 4.6vw, 64px);
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 1.02;
+  animation: qc-reveal 900ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.qc-app .openui-agent-welcome-screen__description {
+  max-width: 640px;
+  color: var(--qc-ink-2);
+  font-size: 17px;
+  font-weight: 450;
+  line-height: 1.55;
+  animation: qc-reveal 900ms 120ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Composer: glass with an ember light that orbits the edge on focus. */
+.qc-app .openui-agent-desktop-welcome-composer,
+.qc-app .openui-agent-thread-composer__input-wrapper {
+  position: relative;
+  border-color: var(--qc-line-strong);
+  background: var(--qc-panel);
+  backdrop-filter: var(--qc-glass-blur);
+  -webkit-backdrop-filter: var(--qc-glass-blur);
+  box-shadow: var(--qc-shadow), var(--qc-edge);
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.qc-app .openui-agent-desktop-welcome-composer {
+  animation: qc-reveal 900ms 220ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.qc-app .openui-agent-desktop-welcome-composer::before,
+.qc-app .openui-agent-thread-composer__input-wrapper::before {
+  position: absolute;
+  inset: -1px;
+  z-index: 0;
+  padding: 1.5px;
+  border-radius: inherit;
+  background: conic-gradient(from var(--qc-angle), transparent 0deg, var(--qc-accent) 60deg, var(--qc-accent-2) 120deg, transparent 200deg);
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 240ms ease;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+}
+
+.qc-app .openui-agent-desktop-welcome-composer:focus-within,
+.qc-app .openui-agent-thread-composer__input-wrapper:focus-within {
+  border-color: transparent;
+  box-shadow: var(--qc-shadow), var(--qc-edge), 0 0 0 4px var(--qc-accent-soft), 0 20px 60px -20px var(--qc-accent);
+}
+
+.qc-app .openui-agent-desktop-welcome-composer:focus-within::before,
+.qc-app .openui-agent-thread-composer__input-wrapper:focus-within::before {
+  opacity: 1;
+  animation: qc-orbit 4s linear infinite;
+}
+
+.qc-app .openui-agent-desktop-welcome-composer > *,
+.qc-app .openui-agent-thread-composer__input-wrapper > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* The composer already shows focus; no second outline on the textarea. */
+.qc-app .openui-agent-desktop-welcome-composer textarea:focus-visible,
+.qc-app .openui-agent-thread-composer textarea:focus-visible {
+  outline: none;
+}
+
+.qc-app .openui-agent-desktop-welcome-composer__submit-button,
+.qc-app .openui-agent-thread-composer__submit-button {
+  background: linear-gradient(135deg, var(--qc-accent), var(--qc-accent-2));
+  color: var(--qc-on-accent);
+}
+
+/* Starters */
+.qc-app .openui-agent-conversation-starter-item-short {
+  background: var(--qc-panel);
+  border-color: var(--qc-line-strong);
+  backdrop-filter: var(--qc-glass-blur);
+  -webkit-backdrop-filter: var(--qc-glass-blur);
+  transition: border-color 180ms ease, background-color 180ms ease, transform 180ms ease;
+}
+
+.qc-app .openui-agent-conversation-starter-item-short:hover {
+  border-color: var(--qc-accent);
+  background: var(--qc-accent-soft);
+  transform: translateY(-1px);
+}
+
+.qc-app .openui-agent-welcome-screen__desktop-starters,
+.qc-app .openui-agent-welcome-screen__chip-row {
+  animation: qc-reveal 900ms 320ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Messages */
+.qc-app .openui-agent-thread-message-user__content {
+  border: 1px solid color-mix(in srgb, var(--qc-accent) 30%, transparent);
+  border-radius: 18px 18px 6px 18px;
+}
+
+.qc-app .openui-shell-thread-message-assistant__content {
+  font-variant-numeric: tabular-nums;
+  animation: qc-reveal 500ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* Answer cards: glass panels with one radius so chart, table and
+   metrics line up. */
+.qc-app .openui-card-sunk {
+  border-radius: 20px;
+  background: var(--qc-panel);
+  border-color: var(--qc-line);
+  backdrop-filter: var(--qc-glass-blur);
+  -webkit-backdrop-filter: var(--qc-glass-blur);
+  box-shadow: var(--qc-shadow), var(--qc-edge);
+}
+
+.qc-app .openui-chart-container {
+  border-radius: 14px;
+}
+
+.qc-app .openui-chart-legend {
+  font-variant-numeric: tabular-nums;
+}
+
+/* OpenUI's composite text tokens hard-code "Inter"; use the app font. */
+.qc-app [class^="openui-"],
+.qc-app [class*=" openui-"] {
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+.qc-app [class*="openui-"] code,
+.qc-app [class*="openui-"] pre,
+.qc-app [class*="openui-"][class*="code"] {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+
+.qc-app .openui-agent-welcome-screen__title {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+/* Single-series bar charts: one hue per bar, cycling the chart palette,
+   so a ranking reads as distinct categories. The one-swatch legend would
+   now contradict the bars, so it is hidden; the axis still names the
+   measure. Multi-series charts keep series colours and their legend. */
+.qc-app .recharts-surface:not(:has(.recharts-bar ~ .recharts-bar)) .recharts-bar-rectangle:nth-child(8n + 1) path { fill: var(--qc-series-1); }
+.qc-app .recharts-surface:not(:has(.recharts-bar ~ .recharts-bar)) .recharts-bar-rectangle:nth-child(8n + 2) path { fill: var(--qc-series-2); }
+.qc-app .recharts-surface:not(:has(.recharts-bar ~ .recharts-bar)) .recharts-bar-rectangle:nth-child(8n + 3) path { fill: var(--qc-series-3); }
+.qc-app .recharts-surface:not(:has(.recharts-bar ~ .recharts-bar)) .recharts-bar-rectangle:nth-child(8n + 4) path { fill: var(--qc-series-4); }
+.qc-app .recharts-surface:not(:has(.recharts-bar ~ .recharts-bar)) .recharts-bar-rectangle:nth-child(8n + 5) path { fill: var(--qc-series-5); }
+.qc-app .recharts-surface:not(:has(.recharts-bar ~ .recharts-bar)) .recharts-bar-rectangle:nth-child(8n + 6) path { fill: var(--qc-series-6); }
+.qc-app .recharts-surface:not(:has(.recharts-bar ~ .recharts-bar)) .recharts-bar-rectangle:nth-child(8n + 7) path { fill: var(--qc-series-7); }
+.qc-app .recharts-surface:not(:has(.recharts-bar ~ .recharts-bar)) .recharts-bar-rectangle:nth-child(8n + 8) path { fill: var(--qc-series-8); }
+
+.qc-app [class*="bar-chart"]:has(.recharts-bar):not(:has(.recharts-bar ~ .recharts-bar)) > .openui-chart-legend-container {
+  display: none;
+}
+
+/* Dark mode: chart marks glow softly against the glass. */
+.qc-app[data-theme="dark"] .recharts-bar-rectangle path,
+.qc-app[data-theme="dark"] .recharts-sector,
+.qc-app[data-theme="dark"] .recharts-line-curve {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.08)) saturate(1.1);
+}
+
+.qc-app .recharts-bar-rectangle:hover path {
+  filter: brightness(1.15);
+}
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+.qc-app ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.qc-app ::-webkit-scrollbar-track {
+  background: var(--scroll-track);
+}
+
+.qc-app ::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb);
+  border-radius: 10px;
+}
+
+/* =========================================================
+   MOTION
+   ========================================================= */
+
+@keyframes qc-orbit {
+  to { --qc-angle: 360deg; }
+}
+
+@keyframes qc-reveal {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Solid surfaces where glass is unsupported or unwanted. */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .qc-app { --qc-panel: var(--qc-panel-solid); }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .qc-app { --qc-panel: var(--qc-panel-solid); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

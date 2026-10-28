@@ -1,0 +1,38 @@
+﻿# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Local runtime state and generated results (the CSV datasets in data/ are tracked)
+data/app_state.db*
+logs/
+evaluation_results.json
+served.css
+
+# Node.js and Next.js
+node_modules/
+.next/
+out/
+.turbo/
+
+# Local editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary backups
+*.backup
+*.bak
+*.before-*

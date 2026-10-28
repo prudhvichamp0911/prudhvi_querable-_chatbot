@@ -1,0 +1,63 @@
+# VeloDB-compatible dev cluster.
+#
+# VeloDB is built on Apache Doris and speaks the same MySQL wire protocol and
+# the same SQL, so this all-in-one Doris image is the local stand-in for a
+# VeloDB Cloud instance. To point the app at real VeloDB instead, leave this
+# file unused and set VELODB_HOST / VELODB_PORT / VELODB_USER /
+# VELODB_PASSWORD in .env - no code changes.
+#
+#   docker compose up -d          start
+#   docker compose logs -f doris  watch it come up (first boot ~60-90s)
+#   docker compose down           stop  (add -v to delete the data)
+#
+# Ports:
+#   9030  MySQL protocol (queries)      -> VELODB_PORT
+#   8030  FE HTTP: Stream Load + web UI -> VELODB_HTTP_PORT
+
+services:
+  doris:
+    image: apache/doris:doris-all-in-one-2.1.0
+    container_name: queryable_velodb
+    hostname: doris
+    ports:
+      - "9030:9030"
+      - "8030:8030"
+      - "8040:8040"
+    environment:
+      # Doris needs a large mmap count; the image sets what it can, but on
+      # WSL2 this keeps the BE from refusing to start.
+      - TZ=UTC
+    # Hard memory ceiling. Doris will happily grow into whatever the host
+    # has; on a 16 GB laptop that starves Windows and the OS then kills
+    # other processes (the FastAPI backend is usually the first to go).
+    # 3 GB is comfortable for these datasets - they total 5,475 rows.
+    # Must exceed what the processes inside are configured to use:
+    # fe.conf -Xmx1024m + be.conf mem_limit=1200M + JVM/runtime overhead.
+    # Capping below that sum gets the container OOM-killed mid-query.
+    mem_limit: 3500m
+    memswap_limit: 3500m
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
+    volumes:
+      - doris_data:/opt/apache-doris/fe/doris-meta
+      - doris_be_data:/opt/apache-doris/be/storage
+      # Memory-tuned configuration. The shipped defaults assume a dedicated
+      # server: the FE JVM asks for an 8 GB heap and the BE claims ~80% of
+      # host memory. On a development laptop that starves the OS and other
+      # processes get killed. These copies set 1 GB FE heap / 1200 MB BE.
+      - ./velodb/conf/fe.conf:/opt/apache-doris/fe/conf/fe.conf:ro
+      - ./velodb/conf/be.conf:/opt/apache-doris/be/conf/be.conf:ro
+    healthcheck:
+      # The FE is only usable once it answers on the MySQL port.
+      test: ["CMD-SHELL", "mysql -h127.0.0.1 -P9030 -uroot -e 'select 1' || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 90s
+    restart: unless-stopped
+
+volumes:
+  doris_data:
+  doris_be_data:
