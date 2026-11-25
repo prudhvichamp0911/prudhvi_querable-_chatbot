@@ -20,6 +20,16 @@ const HOP_BY_HOP = new Set([
   "content-length",
 ]);
 
+// Client-supplied IP headers are dropped: the backend rate-limits logins by
+// client IP, so a forged value would let callers dodge that limit.
+const CLIENT_IP_HEADERS = new Set([
+  "x-forwarded-for",
+  "x-real-ip",
+  "forwarded",
+  "cf-connecting-ip",
+  "true-client-ip",
+]);
+
 function backendBase(): string {
   return (process.env.BACKEND_URL ?? "http://127.0.0.1:8000").replace(/\/+$/, "");
 }
@@ -30,8 +40,13 @@ async function forward(request: NextRequest): Promise<Response> {
 
   const headers = new Headers();
   request.headers.forEach((value, key) => {
-    if (!HOP_BY_HOP.has(key.toLowerCase())) headers.set(key, value);
+    const name = key.toLowerCase();
+    if (!HOP_BY_HOP.has(name) && !CLIENT_IP_HEADERS.has(name)) headers.set(key, value);
   });
+  // On Cloudflare, cf-connecting-ip is set by the edge and cannot be forged.
+  // (Locally it is absent and the backend sees the direct connection.)
+  const clientIp = request.headers.get("cf-connecting-ip");
+  if (clientIp) headers.set("x-forwarded-for", clientIp);
   headers.set("x-forwarded-host", incoming.host);
   headers.set("x-forwarded-proto", incoming.protocol.replace(":", ""));
 
@@ -45,10 +60,9 @@ async function forward(request: NextRequest): Promise<Response> {
       redirect: "manual",
     });
   } catch (error) {
-    return Response.json(
-      { detail: `Backend unreachable at ${backendBase()}: ${(error as Error).message}` },
-      { status: 502 },
-    );
+    // Details go to the Worker logs only; never echo the backend URL to clients.
+    console.error(`[api proxy] ${target} failed:`, error);
+    return Response.json({ detail: "Backend unreachable" }, { status: 502 });
   }
 
   const responseHeaders = new Headers();
