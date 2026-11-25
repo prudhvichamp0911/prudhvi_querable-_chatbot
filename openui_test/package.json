@@ -10,7 +10,10 @@
     "typecheck": "tsc --noEmit",
     "openui:assets": "node scripts/generate-openui-assets.mjs",
     "openui:validate": "node scripts/validate-openui.mjs",
-    "test": "npm run typecheck && npm run lint"
+    "test": "npm run typecheck && npm run lint",
+    "cf:build": "node scripts/cf-build.mjs",
+    "cf:preview": "node scripts/cf-build.mjs && opennextjs-cloudflare preview -c ../wrangler.jsonc",
+    "cf:deploy": "node scripts/cf-build.mjs && opennextjs-cloudflare deploy -c ../wrangler.jsonc"
   },
   "dependencies": {
     "@openuidev/lang-core": "0.3.0",
@@ -33,6 +36,7 @@
     "zustand": "^4.5.5"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.20.18",
     "@openuidev/cli": "0.4.1",
     "@types/d3-geo": "^3.1.0",
     "@types/d3-scale": "^4.0.8",
@@ -45,11 +49,15 @@
     "@types/topojson-client": "^3.1.5",
     "eslint": "^9",
     "eslint-config-next": "16.3.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.168.0"
   },
   "allowScripts": {
     "@openuidev/lang-core": true,
     "sharp": true,
-    "unrs-resolver": true
+    "unrs-resolver": true,
+    "esbuild@0.28.2": true,
+    "esbuild@0.25.12": true,
+    "workerd@1.20261123.1": true
   }
 }

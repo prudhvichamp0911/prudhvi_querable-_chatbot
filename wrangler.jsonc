@@ -1,0 +1,32 @@
+{
+  // Cloudflare Workers deployment of the Next.js frontend (openui_test/).
+  //
+  // Workers Builds runs `npx wrangler deploy` from the repo root. Wrangler first
+  // runs build.command (installs openui_test and builds it with OpenNext), then
+  // uploads openui_test/.open-next as the Worker.
+  //
+  // The FastAPI backend (backend/) is Python + VeloDB and cannot run on Workers.
+  // Host it somewhere reachable over HTTPS and point BACKEND_URL at it; the
+  // Worker proxies every /api/* request there (openui_test/src/app/api/[...path]).
+  "name": "prudhvi-querable--chatbot",
+  "main": "openui_test/.open-next/worker.js",
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": "openui_test/.open-next/assets",
+    "binding": "ASSETS"
+  },
+  "build": {
+    "cwd": "openui_test",
+    "command": "npm ci && npm run cf:build"
+  },
+  "observability": { "enabled": true },
+  // Keep variables set in the dashboard (Settings > Variables and Secrets) on
+  // every deploy. Set BACKEND_URL there to the public HTTPS URL of the FastAPI
+  // backend, e.g. https://api.example.com (no trailing slash). Until it is set,
+  // /api/* answers 502 "Backend unreachable" and sign-in cannot work.
+  "keep_vars": true,
+  "vars": {
+    "SESSION_COOKIE_NAME": "qc_session"
+  }
+}

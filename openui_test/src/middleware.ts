@@ -6,8 +6,12 @@ const SESSION_COOKIE = process.env.SESSION_COOKIE_NAME ?? "qc_session";
 /**
  * Optimistic check only: send visitors without a session cookie to /login.
  * FastAPI validates the session on every API call and is the real authority.
+ *
+ * Kept as middleware.ts (edge runtime) rather than Next 16's proxy.ts: proxy.ts
+ * always runs on the Node.js runtime, which OpenNext's Cloudflare adapter only
+ * supports experimentally (it crashed on any request carrying a cookie).
  */
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
   const hasSession = Boolean(request.cookies.get(SESSION_COOKIE)?.value);
   const isAuthPage = ["/login", "/signup"].includes(request.nextUrl.pathname);
 

@@ -272,3 +272,24 @@ prudhvi_querable-_chatbot/
 ├── docs/architecture.md
 └── data/                     <- the CSV datasets
 ```
+
+---
+
+## Deploying the frontend to Cloudflare Workers
+
+The Next.js UI (`openui_test/`) deploys to Cloudflare Workers through the
+OpenNext adapter. The Python backend cannot run on Workers; host it anywhere
+with a public HTTPS URL.
+
+Workers Builds (Git-connected) settings: root directory `/`, build command
+empty, deploy command `npx wrangler deploy`. The root `wrangler.jsonc` builds
+`openui_test` itself.
+
+1. In the Worker's **Settings → Variables and Secrets**, add
+   `BACKEND_URL` = your backend's public URL (e.g. `https://api.example.com`).
+   `keep_vars` in `wrangler.jsonc` stops deploys from overwriting it.
+2. Push to `main`.
+
+Local check of the Worker build: `cd openui_test && npm run cf:preview`.
+`.python-version` pins Python 3.12 for the build image, which otherwise
+installs `requirements.txt` with Python 3.14 and fails on `pydantic-core`.

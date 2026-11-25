@@ -36,3 +36,7 @@ Thumbs.db
 *.backup
 *.bak
 *.before-*
+
+# Cloudflare / OpenNext
+.wrangler/
+.dev.vars

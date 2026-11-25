@@ -3,7 +3,7 @@
 import { ArrowRight, Check, Eye, EyeOff, Moon, Sun } from "lucide-react";
 import { useEffect, useId, useState, type FormEvent } from "react";
 import { useSearchParams } from "next/navigation";
-import { useSystemThemeMode } from "@openuidev/react-ui";
+import { useSystemThemeMode } from "@/lib/use-system-theme-mode";
 
 import { Backdrop } from "@/components/backdrop";
 import { errorMessage } from "@/lib/api";
